@@ -8,46 +8,75 @@
     <link rel="stylesheet" href="assets/css/form.css">
 
 </head>
-<body>
-    <header>
-        <h1></h1>
+<body class="body">
+    <header class="header">
+        <h1>
+            <!-- Calls Logo and Re-sizes it -->
+            <img src="assets/images/BISHO _LIGHTMODE.png" alt="Bisho Logo" width=300px class="logo light-mode">
+
+        </h1>
         <h2>Market Research Blog</h2>
         <nav>
+            <!-- Links and Toggle -->
             <ul>
                 <li>
                     <a href="blog.html">Posts</a>
                 </li>
                 <li>
-                    <a href="#about-me">Dark Mode</a>
+                    <a href="" id="dark-mode-toggle">Dark Mode</a>
                 </li>
                 <li>
-                    <a href="#about-me">Developer Portfolio</a>
+                    <a href="https://maixusbetter.github.io/portfolioHTMLversion/">Developer Portfolio</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <section>
+    <!-- User Input Fields -->
+    <section class="ideas">
         <h2>Post Your Ideas</h2>
+    <form id="postCreation">
+        <!-- Input Boxes re-sizing -->
+        <style>
+            input[type="text"] {
+                width: 400%;
+            }
+        </style>
+        <!-- Input Fields -->
         <ul>
             <li>
                 <h3>Username</h3>
-
+                <label for="userName"> </label>
+                <input id="userName" type="text" class="form-input" name="userName" placeholder="Username" />
             </li>
             <li>
                 <h3>Title</h3>
-
+                <label for="userTitle"> </label>
+                <input id="userTitle" type="text" class="form-input" name="userTitle" placeholder="Title" />
             </li>
             <li>
                 <h3>Ideas</h3>
-
+                <label for="userIdea"> </label>
+                <input id="userIdea" type="text" class="userIdea" name="userIdea" placeholder="Write Your Ideas Here!" />
             </li>
         </ul>
+        <!-- Submit Button -->
+        <button id="submitButton" class="btn btn-block btn-danger">Submit Idea</button>
+    </form>
     </section>
-    <footer>
+
+    <!-- Callls Images of the Bisho Mascots -->
+    <img src="assets/images/BISHO_MASCOTS.png" alt="BISHO_MASCOTS" width=600px class="mascots">
+
+    <!-- Footer and link to developer page -->
+    <footer class="footer">
         <h4>© 2024 Xavier Mendoza (<a href="https://maixusbetter.github.io/portfolioHTMLversion/">Maixus</a>)</h4>  
     </footer>
+    <!-- Calls Necessary Java Script Files -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./assets/js/form.js"></script>
     <script src="./assets/js/logic.js"></script>
 </body>
 </html>
+
+

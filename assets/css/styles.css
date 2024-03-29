@@ -1,0 +1,120 @@
+/*Re-used Variables*/
+:root{
+--headFont:sans-serif;
+--interactableFont:monospace;
+--background-color:white;
+--text-color:black;
+}
+
+/* logo management */
+.logo {
+    position: relative;
+  }
+  
+  .light-mode {
+    position: relative;
+  }
+  
+  .dark-mode .logo {
+    position: relative;
+    content: url("../images/BISHO_DARKMODE.png");
+  }
+  
+
+/*Dark Mode Properties*/
+.dark-mode{
+    --background-color:black;
+    --text-color:white;
+}
+
+/*Default Properties*/
+.body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/*Color of links*/
+a {
+    color: var(--text-color);
+    
+/*Header Positioning and indvidual propeties*/
+}
+.header {
+    padding: 20px;
+    align-items: center;
+}
+
+.header h1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header h2{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: var(--headFont);
+} 
+
+.header nav ul{
+    padding: 70px 0;
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    font-family: var(--interactableFont);   
+}
+
+
+.header ul{
+    float:right;
+    margin-top: -170px;
+    flex-direction: row;
+}
+
+.header li{
+    text-align: center;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+/*footer Positioning and indvidual propeties*/
+.footer{
+    border-top: 1px solid #888 ;
+}
+
+.footer h4{
+    display: flex;
+    margin-left: 45%;
+    position: relative;
+    font-family: var(--headFont);
+}
+
+
+@media screen and (max-width: 768px) {
+    /*Header Re-scaling*/
+    .header h1{
+     flex-direction: column;
+     align-self: center;
+     flex-wrap: nowrap;
+    }
+    .header ul{
+      flex-direction: column;
+      position:relative;
+      margin-top: 0px;
+      float: none;
+      }
+
+      .header h2{
+        text-align: center;
+        flex-direction: column;
+    }
+    /*Footer Re-scaling*/
+    .footer h4{
+        flex-direction: column;
+        text-align: center;
+        margin-left: 16%;
+
+
+    }
+
+  }

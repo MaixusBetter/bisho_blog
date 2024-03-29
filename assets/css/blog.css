@@ -1,0 +1,37 @@
+/*Postional Adjustments based on page content*/
+.header h2{
+    margin-left: 7.5%;
+}
+
+/*Font for posts*/
+.ideas{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*weight of titles*/
+.ideas h2{
+    font-weight: bold;
+}
+
+/*Properties of Author Name*/
+.ideas h3{
+    font-size: small;
+    font-style: italic;
+    color: grey;
+    font-weight: lighter;
+}
+
+/*Properties of post*/
+.ideas p{
+    font-family:Arial, Helvetica, sans-serif;
+    padding-bottom: 1%;
+    border-bottom: 1px solid #888;
+    
+}
+@media screen and (max-width: 768px) {
+    /*Postional Adjustments based on page size*/
+    .header h2{
+        margin-left: 0%;
+    }
+}
+

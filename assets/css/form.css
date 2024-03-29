@@ -1,0 +1,58 @@
+/*Postional Adjustments based on page content*/
+.header h2{
+    margin-left: 2.5%;
+}
+
+/*properties of user input entry field*/
+.ideas{
+    display: flex;
+    font-family: var(--headFont);
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+
+.ideas ul{
+    list-style: none;
+}
+
+
+.ideas button{
+margin-left: 37%;
+}
+
+/*Mascot Image Properties(Large Screen)*/
+.mascots{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative ;
+    top: -350px;
+
+}
+
+/*Footer Properties(Large Screen)*/
+.footer{
+    position: relative;
+    top: -350px;
+}
+
+@media screen and (max-width: 768px) {
+    /*Postional Adjustments based on page size*/
+    .header h2{
+        margin-left: 0%;
+    }
+
+    .ideas{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+
+    .mascots{
+        top: 0px;
+        right: 30%;
+    }
+    .footer{
+        top: 0px;
+    }
+}
